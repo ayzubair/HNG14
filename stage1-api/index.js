@@ -10,10 +10,10 @@ app.use((req, res, next) => {
 
 // Task: GET /
 app.get('/', (req, res) => {
-    res.status(200).json({ message: 'API is running' });
+    res.status(200).json({ message: "API is running" });
 });
 
-// Task: GET ?health
+// Task: GET /health
 app.get('/health', (req, res) => {
     res.status(200).json({ status: 'healthy' });
 });
