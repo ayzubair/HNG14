@@ -2,11 +2,11 @@ const express = require('express');
 const app = express();
 const port = 3000; // Running on a non-public local port
 
-//Middleware to ensure Content-Type is application/json
-app.use((req, res, next) => {
-    res.setHeader('Content-Type', 'application/json');
-    next();
-});
+// //Middleware to ensure Content-Type is application/json
+// app.use((req, res, next) => {
+//     res.setHeader('Content-Type', 'application/json');
+//     next();
+// });
 
 // Task: GET /
 app.get('/', (req, res) => {
@@ -15,15 +15,15 @@ app.get('/', (req, res) => {
 
 // Task: GET /health
 app.get('/health', (req, res) => {
-    res.status(200).json({ status: 'healthy' });
+    res.status(200).json({ status: "healthy" });
 });
 
 // Task: GET /me
 app.get('/me', (req, res) => {
     res.status(200).json({
-        name: 'Zubairu Ayuba Ahmad',
-        email: 'ayzubair@hotmail.com',
-        github: 'https://github.com/ayzubair',
+        name: "Zubairu Ayuba Ahmad",
+        email: "ayzubair@hotmail.com",
+        github: "https://github.com/ayzubair",
     });
 });
 
