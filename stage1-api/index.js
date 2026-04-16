@@ -22,7 +22,7 @@ app.get('/health', (req, res) => {
 app.get('/me', (req, res) => {
     res.status(200).json({
         name: 'Zubairu Ayuba Ahmad',
-        email: 'dayzubair@hotmail.com',
+        email: 'ayzubair@hotmail.com',
         github: 'https://github.com/ayzubair',
     });
 });
