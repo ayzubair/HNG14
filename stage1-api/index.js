@@ -10,12 +10,16 @@ const port = 3000; // Running on a non-public local port
 
 // Task: GET /
 app.get('/', (req, res) => {
-    res.status(200).json({ message: "API is running" });
+    res.status(200).json({ 
+        message: "API is running"
+    });
 });
 
 // Task: GET /health
 app.get('/health', (req, res) => {
-    res.status(200).json({ status: "healthy" });
+    res.status(200).json({ 
+        status: "healthy"
+    });
 });
 
 // Task: GET /me
